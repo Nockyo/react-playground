@@ -11,17 +11,20 @@ const helloWorld = <React.Fragment><h1>Hello <span>{firstName[0].toUpperCase() +
 function MonSuperComposant() {
 
     return(
-        <section>
-            <article className="article">
-                <p>hello10</p>
-            </article>
-            <article className="article">
-                <p>hello20</p>
-            </article>
-            <article className="article">
-                <p>hello30</p>
-            </article>
-        </section>
+        <React.Fragment>
+            <h1>{lastName} {firstName}</h1>
+            <section>
+                <article className="article">
+                    <p>hello10</p>
+                </article>
+                <article className="article">
+                    <p>hello20</p>
+                </article>
+                <article className="article">
+                    <p>hello30</p>
+                </article>
+            </section>
+        </React.Fragment>
     )
 }
 
